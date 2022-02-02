@@ -1,0 +1,51 @@
+<div id="arkanoid-ui">
+  <div id="start-game-ui" class="menu">
+    <div id="start-game-button" class="clickable">Start Game</div>
+  </div>
+
+  <div id="game-over-ui" class="menu">
+    <div>Game Over</div>
+    <div id="retry-button" class="clickable">Try Again</div>
+  </div>
+
+  <div id="win-game-ui" class="menu">
+    <div>You Win!</div>
+    <div id="restart-button" class="clickable">Start Over</div>
+  </div>
+
+  <div id="in-game-ui">
+    <div id="lives-label">Lives: 5</div>
+  </div>
+</div>
+
+<style>
+  #arkanoid-ui {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+    margin: 0;
+  }
+
+  #arkanoid-ui > div {
+    display: none;
+  }
+
+  #in-game-ui {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .clickable {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
