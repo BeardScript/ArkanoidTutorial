@@ -2,7 +2,7 @@ import * as RE from 'rogue-engine';
 import CannonBody from '../rogue_packages/rogue-cannon/Components/CannonBody.re';
 
 export default class Ball extends RE.Component {
-  @RE.Prop("Number") speed = 50;
+  @RE.props.num() speed = 50;
   bodyComponent: CannonBody;
 
   awake() {

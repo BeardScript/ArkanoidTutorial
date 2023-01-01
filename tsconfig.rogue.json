@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "outDir": "build/",
     "module": "esnext",
-    "target": "es5",
+    "target": "ES2015",
     "lib": ["es6", "dom", "es2015"],
     "allowJs": true,
     "moduleResolution": "node",
