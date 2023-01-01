@@ -2,8 +2,8 @@ import * as RE from 'rogue-engine';
 import CannonBody from '../rogue_packages/rogue-cannon/Components/CannonBody.re';
 
 export default class Paddle extends RE.Component {
-  @RE.Prop("Number") speed = 6;
-  @RE.Prop("Number") xLimit = 25;
+  @RE.props.num() speed = 6;
+  @RE.props.num() xLimit = 25;
 
   bodyComponent: CannonBody;
 

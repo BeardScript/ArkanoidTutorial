@@ -3,5 +3,6 @@ node_modules/
 build/
 dist/
 BUILD/
+Build/
 rogue_builds/
 package-lock.json

@@ -5,10 +5,10 @@ import Brick from './Brick.re';
 import Pit from './Pit.re';
 
 export default class GameLogic extends RE.Component {
-  @RE.Prop("Prefab") ballPrefab: RE.Prefab;
-  @RE.Prop("Prefab") brickWallPrefab: RE.Prefab;
-  @RE.Prop("Prefab") paddlePrefab: RE.Prefab;
-  @RE.Prop("Number") lives: number;
+  @RE.props.prefab() ballPrefab: RE.Prefab;
+  @RE.props.prefab() brickWallPrefab: RE.Prefab;
+  @RE.props.prefab() paddlePrefab: RE.Prefab;
+  @RE.props.num() lives: number;
 
   currentLives = 0;
 
